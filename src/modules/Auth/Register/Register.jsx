@@ -100,7 +100,7 @@ const Register = () => {
       {contextHolder}
       <div className="mt-3 mb-3 text-center">
         <Typography className="text-black">
-          <Title level={2}>Đăng ký tài khoản Airbnb</Title>
+          <Title level={2}>Đăng ký tài khoản airbnb</Title>
         </Typography>
       </div>
 

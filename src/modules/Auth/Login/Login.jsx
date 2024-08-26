@@ -70,7 +70,7 @@ const Login = () => {
       {contextHolder}
       <div className="mt-3 mb-3 text-center">
         <Typography className="text-black">
-          <Title level={2}>Đăng nhập Airbnb</Title>
+          <Title level={2}>Đăng nhập airbnb</Title>
         </Typography>
       </div>
 

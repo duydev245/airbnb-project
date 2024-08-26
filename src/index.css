@@ -12,7 +12,7 @@
 }
 
 :root {
-  --primaryColor: #FE6B6E;
+  --primaryColor: #fc5c5e;
 }
 
 /* HomePage */
@@ -26,7 +26,6 @@
 }
 
 .navbar {
-  color: #FBF9F1;
   transition: 0.8s ease;
 }
 
@@ -48,12 +47,21 @@
   .animate__fadeInDown ul.menu-phone {
     background: #565555;
   }
+
+  .smm\:text-white {
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  }
+
+  .smm\:w-28 {
+    width: 7rem !important;
+  }
 }
 
-.navbar-scroll {
+/* .navbar-scroll {
   color: black;
   transition: 0.8s ease;
-}
+} */
 
 .seachbar {
   top: 660px;
@@ -204,7 +212,7 @@
 
 .btn-theme:hover {
   color: #f8f9fa;
-  background-color: rgb(173, 73, 75);
+  background-color: #843738;
 }
 
 .btn-rate {
@@ -214,5 +222,5 @@
 }
 
 .btn-rate:hover {
-  background-color: rgb(173, 73, 75);
+  background-color: #843738;
 }

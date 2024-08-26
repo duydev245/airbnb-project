@@ -142,7 +142,7 @@ const BookingForm = ({ roomDetails, messageApi, listComment, currentUser, handle
                 okText="XÁC NHẬN"
                 cancelText="HỦY"
             >
-                <button className="btn-rate w-full py-3 rounded-lg font-bold text-white duration-300 hover:bg-pink-800">
+                <button className="btn-rate w-full py-3 rounded-lg font-bold text-white">
                     Đặt phòng
                 </button>
             </Popconfirm>
