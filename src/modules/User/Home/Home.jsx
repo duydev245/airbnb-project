@@ -7,7 +7,7 @@ import ListPopularLocations from './ListPopularLocations'
 const Home = () => {
   return (
     <>
-      <ListLocations />
+      {/* <ListLocations /> */}
       <ListPopularLocations />
     </>
   )

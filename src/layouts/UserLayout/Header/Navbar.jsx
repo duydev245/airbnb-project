@@ -46,6 +46,7 @@ const Navbar = () => {
         dispatch(removeUser(null));
         removeLocalStorage("user");
         removeLocalStorage("token");
+        navigate(PATH.HOME);
         window.location.reload();
     };
 
@@ -54,7 +55,7 @@ const Navbar = () => {
             <nav className={`fixed w-full z-[990] py-5 nav-menu duration-500 text-white ${scroll ? 'bg-black costum-navbar' : 'bg-transparent'} smm:bg-black lg:bg-transparent`}>
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     {/* logo */}
-                    <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src="/logo.png" className="h-8" alt="AirBnb Logo" />
                         <span
                             className="self-center text-2xl font-semi font-bold whitespace-nowrap text-[#fc5c5e] duration-500 hover:text-[#983739]"
@@ -75,9 +76,9 @@ const Navbar = () => {
                                 onClick={toggleDropdown}
                             >
                                 {currentUser.avatar ? (
-                                    <img className="h-10" src={currentUser.avatar} />
+                                    <img className="w-10 h-10 rounded-full object-cover" src={currentUser.avatar} />
                                 ) : (
-                                    <img className="h-10" src="https://cdn-icons-png.flaticon.com/512/6596/6596121.png" />
+                                    <img className="w-10 h-10 rounded-full object-cover" src="https://cdn-icons-png.flaticon.com/512/6596/6596121.png" />
                                 )}
                                 <span className={`ml-3 ${scroll ? 'text-black' : 'text-white'} smm:text-white leading-7 uppercase smm:w-28 truncate`}>
                                     {currentUser.name}
@@ -114,13 +115,8 @@ const Navbar = () => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a aria-current="page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active" href="/">
+                                            <a aria-current="page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active" href="/profile">
                                                 Settings
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-current="page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100  active" href="/">
-                                                Earnings
                                             </a>
                                         </li>
                                         <li>

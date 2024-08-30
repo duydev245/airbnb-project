@@ -19,4 +19,12 @@ export const bookingApi = {
         }
     },
 
+    getListBookingRoomById: async (idUser) => {
+        try {
+            const response = await fetcher.get(`/dat-phong/lay-theo-nguoi-dung/${idUser}`);
+            return response.data.content;
+        } catch (error) {
+            throw Error(error.response.data.content);
+        }
+    },
 }
