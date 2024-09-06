@@ -109,15 +109,15 @@ const Navbar = () => {
                                         <span className="block text-sm  text-gray-500 truncate ">{currentUser.email}</span>
                                     </div>
                                     <ul className="py-2" aria-labelledby="user-menu-button">
-                                        <li>
-                                            <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 " href="/profile">
-                                                Dashboard
-                                            </a>
+                                        <li className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                            onClick={() => { navigate(PATH.PROFILE) }}
+                                        >
+                                            Dashboard
                                         </li>
-                                        <li>
-                                            <a aria-current="page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active" href="/profile">
-                                                Settings
-                                            </a>
+                                        <li className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                            onClick={() => { navigate(PATH.PROFILE) }}
+                                        >
+                                            Settings
                                         </li>
                                         <li>
                                             <button

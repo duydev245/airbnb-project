@@ -9,13 +9,14 @@ export const roomApi = {
             throw Error(error)
         }
     },
+    
     getListRoom: async () => {
         try {
             const response = await fetcher.get(`/phong-thue`);
             return response.data.content;
         } catch (error) {
             throw Error(error.response.data.content);
-        }
+        }   
     },
 
     getRoomDetail: async (id) => {
